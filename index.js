@@ -11,6 +11,7 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
+const titleCased = tutorials.map(() => {
+  return tutorials[0].toUpperCase() + tutorials.slice(1)
+})
+// bellow is my guess at how it should be done. Google told me. I have no idea how to use the map() operator correctly
